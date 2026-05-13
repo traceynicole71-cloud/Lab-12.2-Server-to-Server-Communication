@@ -1,0 +1,5 @@
+Why was it important to re-format the data from the Useless Facts API before sending it to your own client? What are the benefits of an API providing a clean, minimal response?  We re-format to make it easier for the smaller packets of data to travel faster in the nextwork; and it speerates the client data from the external API structure.
+
+In the catch block, why is it better to send a generic error message to the client instead of the actual error object from axios? It better to send generic error messages for security reasons and because there is an understood univeral libary of error codes that have their own meanings.
+
+How might you modify this application to get a fact in a different language if the external API supported it (e.g., with a query parameter like ?language=de)?  We can modify it by adding a language param that passes to the external API.
